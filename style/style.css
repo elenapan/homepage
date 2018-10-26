@@ -1,5 +1,17 @@
+/* Custom font */
+@font-face {
+    font-family: Comfortaa;
+    src: url("fonts/Comfortaa-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url("fonts/Comfortaa-Bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
 body {
-    color: #333333;
+    color: #222222;
+    font-family: Comfortaa;
     background-image: url("triangles.png");
     background-size: initial;
     height: 100%;
@@ -17,6 +29,10 @@ body {
     left: 50%;
     position: absolute;
 
+    /* Make it prettier */
+    border-radius: 16px;
+    padding: 40px;
+	  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
