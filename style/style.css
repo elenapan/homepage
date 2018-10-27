@@ -57,6 +57,8 @@ h1 {
 
 h2 {
     color: #333333;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     vertical-align: center;
 }
@@ -69,14 +71,14 @@ ul {
 }
 
 .mainlist {
-    /* Attempt to center the list horizontally, sort of. */
-    /* Needs work. */
+    /* Center the list horizontally */
     transform: translate(-50%, -50%);
+    /* padding: 20px; */
     left: 50%;
     position: absolute;
     top: 236px;
-    width: inherit;
-    /* display: flex; */
+    /* Needed so its width is equal to the total of its children's width */
+    display: inline-flex;
 }
 
 .category {
@@ -86,6 +88,8 @@ ul {
     border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
+    /* Needed for centering the main list */
+    display: inline-table;
 }
 
 a {
