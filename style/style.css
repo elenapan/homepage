@@ -9,9 +9,12 @@
     font-weight: bold;
 }
 
-body {
-    color: #222222;
+* {
+    /* font-family: sans-serif; */
     font-family: Comfortaa;
+}
+
+body {
     background-image: url("triangles.png");
     background-size: initial;
     height: 100%;
@@ -19,8 +22,8 @@ body {
 }
 
 .mainbox {
-    height: 80%;
-    width: 60%;
+    height: 90%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.6);
 
     /* Center the box */
@@ -30,13 +33,92 @@ body {
     position: absolute;
 
     /* Make it prettier */
-    border-radius: 16px;
-    padding: 40px;
+    border-radius: 6px;
+    /* padding: 40px; */
 	  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    border-radius: 6px 6px 0px 0px;
 }
 
 h1 {
     font-weight: bold;
     font-size: 30pt;
+    color: #333333;
     text-align: center;
+    vertical-align: center;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    vertical-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainlist {
+    /* Attempt to center the list horizontally, sort of. */
+    /* Needs work. */
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    top: 236px;
+    width: inherit;
+    /* display: flex; */
+}
+
+.category {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #333333;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    border-left: 4px solid rgba(255, 255, 255, 0.7);
+    border-right: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+li:hover {
+    color: #B4486C;
+    background-color: #FFFFFF;
+    border-left: 4px solid #FB7C80;
+    transition: .5s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
