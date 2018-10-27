@@ -90,10 +90,16 @@ ul {
 
 a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:link, a:visited {
     color: #333333;
+}
+
+a:hover {
+    color: #B4486C;
+    transition: .5s;
 }
 
 li {
