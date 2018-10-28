@@ -76,7 +76,7 @@ ul {
     /* padding: 20px; */
     left: 50%;
     position: absolute;
-    top: 236px;
+    top: 237px;
     /* Needed so its width is equal to the total of its children's width */
     display: inline-flex;
 }
